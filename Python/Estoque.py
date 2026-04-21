@@ -3,18 +3,18 @@ print('Sistema de estoque')
 loja = []
 
 def cadastro(): #Função do Cadastro
-    produto = input('Qual produto deseja cadastrar? ').capitalize()
+    produtinho = input('Qual produto deseja cadastrar? ').capitalize()
     id = int(input('Qual é o número de identificação?(ID) '))
     preco_produto = float(input('Qual é o preço do produto? '))
     quant_produtos = int(input('Quantas vezes deseja cadastrar este produto? '))
     estoque = {
-        'Nome do Produto' : produto,
+        'Nome do Produto' : produtinho,
         'ID' : id,
         'Preco do Produto' : preco_produto,
         'Quantidade' : quant_produtos
     }
     loja.append(estoque)
-    print(f"O produto {produto} foi cadastrado com o id {id}, preço de R${preco_produto} e tendo {quant_produtos} unidades")
+    print(f"O produto {produtinho} foi cadastrado com o id {id}, preço de R${preco_produto} e tendo {quant_produtos} unidades")
 
 def consulta(): #Função de Ver os Produtos Cadastrados
     confirmar = input('Realmente deseja consultar os produtos cadastros?\n ').capitalize()
